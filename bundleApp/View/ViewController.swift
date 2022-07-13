@@ -7,7 +7,11 @@
 
 import UIKit
 
+
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    
+    
+    
     
     private var articleListVM:ArticleListViewModel!
     
@@ -48,6 +52,22 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         cell.titleLabel.text = ArticleVM.title
         cell.descriptionLabel.text = ArticleVM.description
         cell.yazarLabel.text = ArticleVM.author
+        
+        let imgUrl = (ArticleVM.urlToImage)!
+                print(imgUrl)
+        cell.imageLabel.downloaded(from: imgUrl)
+     /*
+      // tarihi kısaltarak yazma
+      let dateFormatterPrint = DateFormatter()
+      dateFormatterPrint.dateFormat = "dd MMM,yyyy"
+      let exactlyCurrentTime: Date = Date()
+      
+        cell.tarihLabel.text = dateFormatterPrint.string(from: ArticleVM.publishedAt)
+
+*/
+      
+   
+        
         cell.tarihLabel.text = ArticleVM.publishedAt
         
        

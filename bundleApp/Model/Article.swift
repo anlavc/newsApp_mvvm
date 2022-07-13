@@ -20,3 +20,5 @@ struct Article: Decodable {
     var publishedAt: String?
     var description: String?
 }
+
+
