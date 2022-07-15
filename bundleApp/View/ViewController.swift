@@ -9,20 +9,19 @@ import UIKit
 
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-    
-    
-    
-    
-    private var articleListVM:ArticleListViewModel!
-    
-    
+
+    public var articleListVM:ArticleListViewModel!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setup()
+       
     }
+    
     func setup() {
+        
         let url = URL(string:"https://newsapi.org/v2/top-headlines?country=tr&apiKey=5cbbccb020874ca08f64011965b1c0af")!
         Webservice().getData(url: url) { articles in
             if let articles = articles {
@@ -33,12 +32,12 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             }
         }
     }
-    
     //Tableview func
     // table viewın kendisini birden fazla bölüme atyırması
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.articleListVM == nil ? 0 :self.articleListVM.numberOfSections
     }
+   
     // her bir sectionda kaç satır olacağını belirtir.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.articleListVM.numberOfRowsSection(section)
@@ -52,27 +51,15 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         cell.titleLabel.text = ArticleVM.title
         cell.descriptionLabel.text = ArticleVM.description
         cell.yazarLabel.text = ArticleVM.author
-        
         let imgUrl = (ArticleVM.urlToImage)!
                 print(imgUrl)
         cell.imageLabel.downloaded(from: imgUrl)
-     /*
-      // tarihi kısaltarak yazma
-      let dateFormatterPrint = DateFormatter()
-      dateFormatterPrint.dateFormat = "dd MMM,yyyy"
-      let exactlyCurrentTime: Date = Date()
-      
-        cell.tarihLabel.text = dateFormatterPrint.string(from: ArticleVM.publishedAt)
-
-*/
-      
-   
-        
         cell.tarihLabel.text = ArticleVM.publishedAt
-        
-       
-        //cell.imageLabel.image = ArticleVM.urlToImage
         return cell
+    }
+
+    @IBAction func detailsButton(_ sender: Any) {
+        performSegue(withIdentifier: "showDetails", sender: nil)
     }
 }
 

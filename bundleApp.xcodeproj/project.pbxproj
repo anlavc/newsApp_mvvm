@@ -12,6 +12,7 @@
 		EE1AA492287DF77A00990338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1AA490287DF77A00990338 /* Main.storyboard */; };
 		EE1AA494287DF77C00990338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1AA493287DF77C00990338 /* Assets.xcassets */; };
 		EE1AA497287DF77C00990338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1AA495287DF77C00990338 /* LaunchScreen.storyboard */; };
+		EE65D981287F84EA00EE4CD6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65D980287F84EA00EE4CD6 /* DetailsViewController.swift */; };
 		EE9E61E2287E237C00FA9DCD /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E61E1287E237C00FA9DCD /* Article.swift */; };
 		EE9E61E6287E26B600FA9DCD /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E61E5287E26B600FA9DCD /* Webservice.swift */; };
 		EEB43904287EB6FB0094AB61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB43903287EB6FB0094AB61 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		EE1AA493287DF77C00990338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE1AA496287DF77C00990338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1AA498287DF77C00990338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE65D980287F84EA00EE4CD6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EE9E61E1287E237C00FA9DCD /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		EE9E61E5287E26B600FA9DCD /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		EEB43903287EB6FB0094AB61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				EEB43903287EB6FB0094AB61 /* ViewController.swift */,
+				EE65D980287F84EA00EE4CD6 /* DetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				EEB43904287EB6FB0094AB61 /* ViewController.swift in Sources */,
 				EE9E61E2287E237C00FA9DCD /* Article.swift in Sources */,
 				EE1AA48B287DF77A00990338 /* AppDelegate.swift in Sources */,
+				EE65D981287F84EA00EE4CD6 /* DetailsViewController.swift in Sources */,
 				EEB43906287EB94F0094AB61 /* ArticleViewModel.swift in Sources */,
 				EE9E61E6287E26B600FA9DCD /* Webservice.swift in Sources */,
 				EEB4390B287EC1B10094AB61 /* ArticleTableViewCell.swift in Sources */,

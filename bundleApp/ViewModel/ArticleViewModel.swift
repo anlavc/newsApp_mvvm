@@ -57,4 +57,7 @@ extension ArticleViewModel {
     var publishedAt: String? {
         return self.article.publishedAt
     }
+    var url: String? {
+        return self.article.url
+    }
 }

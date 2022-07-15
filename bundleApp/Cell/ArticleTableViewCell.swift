@@ -17,6 +17,7 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var yazarLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var imageLabel: UIImageView!
+    @IBOutlet weak var detailsButton: UIButton!
     @IBOutlet weak var tarihLabel: UILabel!
  
 }
