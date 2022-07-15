@@ -25,9 +25,12 @@
                                     <segments>
                                         <segment title="Genel"/>
                                         <segment title="Spor"/>
-                                        <segment title="Ekonomi"/>
+                                        <segment title="Teknoloji"/>
                                         <segment title="Magazin"/>
                                     </segments>
+                                    <connections>
+                                        <action selector="segmentedChanged:" destination="9sA-UB-4H0" eventType="valueChanged" id="6z3-mF-qWB"/>
+                                    </connections>
                                 </segmentedControl>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="180" id="D8G-4I-QkK" customClass="ArticleTableViewCell" customModule="bundleApp" customModuleProvider="target">

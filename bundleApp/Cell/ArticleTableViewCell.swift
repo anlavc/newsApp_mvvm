@@ -20,6 +20,7 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var detailsButton: UIButton!
     @IBOutlet weak var tarihLabel: UILabel!
  
+    
 }
 
 

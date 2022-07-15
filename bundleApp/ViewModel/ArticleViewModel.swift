@@ -60,4 +60,7 @@ extension ArticleViewModel {
     var url: String? {
         return self.article.url
     }
+    var category: String? {
+        return self.article.category
+    }
 }
